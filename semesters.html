@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Semesters</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+</head>
+
+<body>
+  <a href="dashboard.html" class="back-btn">
+  ← Back
+</a>
+
+  <div class="semester-container">
+
+    <h1>
+      My Semesters
+    </h1>
+
+    <form id="semesterForm">
+
+      <input
+        type="text"
+        id="semesterName"
+        placeholder="Enter Semester Name"
+        required
+      >
+
+      <button type="submit">
+        Add Semester
+      </button>
+
+    </form>
+
+    <div id="semesterList"></div>
+
+  </div>
+
+  <script src="./js/semesters.js"></script>
+
+</body>
+</html>

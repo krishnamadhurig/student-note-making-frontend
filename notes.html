@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <a href="dashboard.html" class="back-btn">← Back</a>
+
+  <div class="notes-container">
+
+    <h1>📝 My Notes</h1>
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search Notes..."
+    >
+
+    <form id="noteForm">
+
+      <select id="semesterSelect" required>
+        <option value="">Select Semester</option>
+      </select>
+
+      <input
+        type="text"
+        id="subject"
+        placeholder="Subject"
+        required
+      >
+
+      <input
+        type="text"
+        id="title"
+        placeholder="Note Title"
+        required
+      >
+
+      <textarea
+        id="content"
+        placeholder="Write your notes..."
+        required
+      ></textarea>
+      <input
+  type="file"
+  id="file"
+/>
+
+      <button type="submit">
+        Save Note
+      </button>
+
+    </form>
+
+    <div id="notesList"></div>
+
+  </div>
+  <div class="pagination">
+
+  <button id="prevBtn">
+    Previous
+  </button>
+
+  <span id="pageNumber">
+    1
+  </span>
+
+  <button id="nextBtn">
+    Next
+  </button>
+
+</div>
+
+  <div id="toast"></div>
+
+  <script src="./js/notes.js"></script>
+
+</body>
+</html>

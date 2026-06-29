@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Tours</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+</head>
+
+<body>
+<a href="dashboard.html" class="back-btn">
+  ← Back
+</a>
+  <div class="tour-container">
+
+    <h1>
+      Tour Planner
+    </h1>
+
+    <form id="tourForm">
+
+      <input
+        type="text"
+        id="title"
+        placeholder="Tour Title"
+        required
+      >
+
+      <input
+        type="text"
+        id="location"
+        placeholder="Location"
+        required
+      >
+
+      <input
+        type="date"
+        id="date"
+        required
+      >
+
+      <input
+        type="number"
+        id="budget"
+        placeholder="Budget"
+        required
+      >
+
+      <input
+        type="number"
+        id="members"
+        placeholder="Members"
+        required
+      >
+
+      <textarea
+        id="notes"
+        placeholder="Extra Notes"
+      ></textarea>
+
+      <button type="submit">
+        Add Tour
+      </button>
+
+    </form>
+
+    <div id="tourList"></div>
+
+  </div>
+
+  <script src="./js/tours.js"></script>
+
+</body>
+</html>

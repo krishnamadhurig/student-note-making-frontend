@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Exams</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+</head>
+
+<body>
+  <a href="dashboard.html" class="back-btn">
+  ← Back
+</a>
+
+  <div class="exam-container">
+
+    <h1>
+      Exam Planner
+    </h1>
+
+    <form id="examForm">
+
+      <input
+        type="text"
+        id="subject"
+        placeholder="Subject"
+        required
+      >
+
+      <input
+        type="date"
+        id="examDate"
+        required
+      >
+
+      <select id="priority">
+
+        <option value="High">
+          High Priority
+        </option>
+
+        <option value="Medium">
+          Medium Priority
+        </option>
+
+        <option value="Low">
+          Low Priority
+        </option>
+
+      </select>
+
+      <button type="submit">
+        Add Exam
+      </button>
+
+    </form>
+
+    <div id="examList"></div>
+
+  </div>
+
+  <script src="./js/exams.js"></script>
+
+</body>
+</html>

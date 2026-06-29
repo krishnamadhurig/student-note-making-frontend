@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Assignments</title>
+
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+</head>
+
+<body>
+  <a href="dashboard.html" class="back-btn">
+  ← Back
+</a>
+
+  <div class="assignment-container">
+
+    <h1>
+      Assignment Tracker
+    </h1>
+
+    <form id="assignmentForm">
+
+      <input
+        type="text"
+        id="title"
+        placeholder="Assignment Title"
+        required
+      >
+
+      <input
+        type="text"
+        id="subject"
+        placeholder="Subject"
+        required
+      >
+
+      <input
+        type="date"
+        id="dueDate"
+        required
+      >
+
+      <button type="submit">
+        Add Assignment
+      </button>
+
+    </form>
+
+    <div id="assignmentList"></div>
+
+  </div>
+
+  <script src="./js/assignments.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app-wrapper">
+
+  <!-- SIDEBAR -->
+
+  <div class="sidebar">
+
+<div>
+
+  <div class="logo">
+    <h2>
+      Campus
+      <span>Companion</span>
+    </h2>
+  </div>
+
+  <ul>
+
+    <li>
+      <a class="active" href="dashboard.html">
+        🏠 <span>Dashboard</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="semesters.html">
+        📚 <span>Semesters</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="notes.html">
+        📝 <span>Notes</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="assignments.html">
+        📌 <span>Assignments</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="exams.html">
+        🎯 <span>Exams</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="pomodoro.html">
+        ⏳ <span>Pomodoro</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="calendar.html">
+        📅 <span>Calendar</span>
+      </a>
+    </li>
+
+    <li>
+      <a id="tourLink" href="tour.html">
+        ✈️ <span>Tours</span>
+      </a>
+    </li>
+
+    <li>
+      <a id="aiLink" href="ai.html">
+        🤖 <span>AI Assistant</span>
+      </a>
+    </li>
+
+   
+
+  </ul>
+
+</div>
+
+<div>
+
+  <button id="themeToggle">
+    Toggle Theme
+  </button>
+
+  <button id="logoutBtn">
+    Logout
+  </button>
+
+</div>
+
+
+  </div>
+
+  <!-- MAIN -->
+
+  <div class="main-container">
+
+
+<div class="topbar">
+
+  <div>
+    <h1 id="welcomeText">
+      Welcome Back 👋
+    </h1>
+
+    <p>
+      Organize your study life smarter.
+    </p>
+  </div>
+
+</div>
+
+<!-- PREMIUM -->
+<div class="premium-banner">
+
+  <div class="premium-content">
+
+    <div>
+
+      <h2>💎 Upgrade to Premium</h2>
+
+      <p>
+        Unlock AI Note Summaries,
+        Unlimited Notes,
+        Cloud Backup,
+        Advanced Analytics,
+        Priority Support &
+        More.
+      </p>
+
+    </div>
+
+    <div>
+
+      <span class="premium-price">
+        ₹99 / Month
+      </span>
+
+      <a href="premium.html" class="premium-btn">
+        Upgrade Now
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- STATS -->
+<div class="stats-container">
+
+  <div class="stat-card" id="notesCard">
+    <div class="stat-icon">📝</div>
+    <h3>Total Notes</h3>
+    <p id="notesCount">0</p>
+  </div>
+
+  <div class="stat-card" id="assignmentCard">
+    <div class="stat-icon">📌</div>
+    <h3>Assignments</h3>
+    <p id="assignmentCount">0</p>
+  </div>
+
+  <div class="stat-card" id="examCard">
+    <div class="stat-icon">🎯</div>
+    <h3>Upcoming Exams</h3>
+    <p id="examCount">0</p>
+  </div>
+
+  <div class="stat-card" id="tourCard">
+    <div class="stat-icon">✈️</div>
+    <h3>Tours</h3>
+    <p id="tourCount">0</p>
+  </div>
+
+</div>
+
+<!-- DASHBOARD GRID -->
+<div class="dashboard-grid">
+
+  <div class="dashboard-card">
+    <h2>🎯 Upcoming Exams</h2>
+    <div id="upcomingExams"></div>
+  </div>
+
+  <div class="dashboard-card">
+    <h2>📌 Upcoming Assignments</h2>
+    <div id="upcomingAssignments"></div>
+  </div>
+
+  <div class="dashboard-card">
+    <h2>✈️ Upcoming Tours</h2>
+    <div id="upcomingTours"></div>
+  </div>
+
+</div>
+
+<!-- MINI CALENDAR -->
+<div class="mini-calendar">
+
+  <div class="mini-header">
+    <button id="miniPrev">‹</button>
+    <span id="miniMonth"></span>
+    <button id="miniNext">›</button>
+  </div>
+
+  <div class="mini-weekdays">
+    <div>S</div>
+    <div>M</div>
+    <div>T</div>
+    <div>W</div>
+    <div>T</div>
+    <div>F</div>
+    <div>S</div>
+  </div>
+
+  <div class="mini-grid" id="miniGrid"></div>
+
+</div>
+
+
+  </div>
+
+</div>
+
+<script src="./js/dashboard.js"></script>
+
+</body>
+</html>
