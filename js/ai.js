@@ -27,7 +27,7 @@ async function sendMessage() {
 
 const token = localStorage.getItem("token");
 
-const res = await fetch("http://localhost:5000/api/ai/chat", {
+const res = await fetch("https://student-note-making-app-1.onrender.com/api/ai/chat", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -45,7 +45,7 @@ async function loadChat() {
     const token = localStorage.getItem("token");
 
 const res = await fetch(
-  "http://localhost:5000/api/ai/history",
+  "https://student-note-making-app-1.onrender.com/api/ai/history",
   {
     headers: {
       Authorization: `Bearer ${token}`

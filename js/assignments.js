@@ -15,7 +15,7 @@ const fetchAssignments = async () => {
   try {
 
     const response = await fetch(
-      "http://localhost:5000/api/assignments",
+      "https://student-note-making-app-1.onrender.com/api/assignments",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -115,7 +115,7 @@ assignmentForm.addEventListener(
     try {
 
       await fetch(
-        "http://localhost:5000/api/assignments",
+        "https://student-note-making-app-1.onrender.com/api/assignments",
         {
           method: "POST",
 
@@ -151,7 +151,7 @@ const deleteAssignment = async (id) => {
   try {
 
     await fetch(
-      `http://localhost:5000/api/assignments/${id}`,
+      `https://student-note-making-app-1.onrender.com/api/assignments/${id}`,
       {
         method: "DELETE",
 
@@ -177,7 +177,7 @@ const toggleStatus = async (id) => {
   try {
 
     await fetch(
-      `http://localhost:5000/api/assignments/status/${id}`,
+      `https://student-note-making-app-1.onrender.com/api/assignments/status/${id}`,
       {
         method: "PUT",
 

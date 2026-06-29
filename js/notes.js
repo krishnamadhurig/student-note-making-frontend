@@ -19,7 +19,7 @@ const toast = document.getElementById("toast");
 // FETCH SEMESTERS
 const fetchSemesters = async () => {
   try {
-    const response = await fetch("http://localhost:5000/api/semesters", {
+    const response = await fetch("https://student-note-making-app-1.onrender.com/api/semesters", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -44,7 +44,7 @@ const fetchSemesters = async () => {
 // FETCH NOTES
 const fetchNotes = async () => {
   try {
-    const response = await fetch(`http://localhost:5000/api/notes?page=${currentPage}`, {
+    const response = await fetch(`https://student-note-making-app-1.onrender.com/api/notes?page=${currentPage}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -92,7 +92,7 @@ const displayNotes = (notes) => {
         <p>${note.content}</p>
         ${
           note.fileUrl
-            ? `<a target="_blank" href="http://localhost:5000/uploads/${note.fileUrl}">📄 View File</a>`
+            ? `<a target="_blank" href="https://student-note-making-app-1.onrender.com/uploads/${note.fileUrl}">📄 View File</a>`
             : ""
         }
         <div class="note-actions">
@@ -119,7 +119,7 @@ noteForm.addEventListener("submit", async (e) => {
     let response;
 
     if (editMode) {
-      response = await fetch(`http://localhost:5000/api/notes/${editNoteId}`, {
+      response = await fetch(`https://student-note-making-app-1.onrender.com/api/notes/${editNoteId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -154,7 +154,7 @@ noteForm.addEventListener("submit", async (e) => {
         formData.append("file", file);
       }
 
-      response = await fetch("http://localhost:5000/api/notes", {
+      response = await fetch("https://student-note-making-app-1.onrender.com/api/notes", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -198,7 +198,7 @@ function prepareEditNote(id) {
 // DELETE NOTE
 async function deleteNote(id) {
   try {
-    await fetch(`http://localhost:5000/api/notes/${id}`, {
+    await fetch(`https://student-note-making-app-1.onrender.com/api/notes/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -207,7 +207,7 @@ async function deleteNote(id) {
 
     showToast("Note Deleted");
 
-    const response = await fetch(`http://localhost:5000/api/notes?page=${currentPage}`, {
+    const response = await fetch(`hhttps://student-note-making-app-1.onrender.com/api/notes?page=${currentPage}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -228,7 +228,7 @@ async function deleteNote(id) {
 // PIN NOTE
 async function pinNote(id) {
   try {
-    await fetch(`http://localhost:5000/api/notes/pin/${id}`, {
+    await fetch(`https://student-note-making-app-1.onrender.com/api/notes/pin/${id}`, {
       method: "PUT",
       headers: {
         Authorization: `Bearer ${token}`,

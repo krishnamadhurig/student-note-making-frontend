@@ -18,7 +18,7 @@ const fetchExams = async () => {
   try {
 
     const response = await fetch(
-      "http://localhost:5000/api/exams",
+      "https://student-note-making-app-1.onrender.com/api/exams",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -117,7 +117,7 @@ examForm.addEventListener(
     try {
 
       await fetch(
-        "http://localhost:5000/api/exams",
+        "https://student-note-making-app-1.onrender.com/api/exams",
         {
           method: "POST",
 
@@ -154,7 +154,7 @@ const deleteExam = async (id) => {
   try {
 
     await fetch(
-      `http://localhost:5000/api/exams/${id}`,
+      `https://student-note-making-app-1.onrender.com/api/exams/${id}`,
       {
         method: "DELETE",
 

@@ -18,7 +18,7 @@ const fetchSemesters = async () => {
   try {
 
     const response = await fetch(
-      "http://localhost:5000/api/semesters",
+      "https://student-note-making-app-1.onrender.com/api/semesters",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -67,7 +67,7 @@ semesterForm.addEventListener(
     try {
 
       await fetch(
-        "http://localhost:5000/api/semesters",
+        "https://student-note-making-app-1.onrender.com/api/semesters",
         {
           method: "POST",
 
@@ -100,7 +100,7 @@ const deleteSemester = async (id) => {
   try {
 
     await fetch(
-      `http://localhost:5000/api/semesters/${id}`,
+      `https://student-note-making-app-1.onrender.com/api/semesters/${id}`,
       {
         method: "DELETE",
 

@@ -28,7 +28,7 @@ const fetchCalendarData = async () => {
 
     // EXAMS
     const examResponse = await fetch(
-      "http://localhost:5000/api/exams",
+      "https://student-note-making-app-1.onrender.com/api/exams",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -43,7 +43,7 @@ const fetchCalendarData = async () => {
     // ASSIGNMENTS
     const assignmentResponse =
       await fetch(
-        "http://localhost:5000/api/assignments",
+        "https://student-note-making-app-1.onrender.com/api/assignments",
         {
           headers: {
             Authorization:

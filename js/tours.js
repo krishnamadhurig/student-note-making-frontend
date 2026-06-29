@@ -28,7 +28,7 @@ const fetchTours = async () => {
   try {
 
     const response = await fetch(
-      "http://localhost:5000/api/tours",
+      "https://student-note-making-app-1.onrender.com/api/tours",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -130,7 +130,7 @@ tourForm.addEventListener(
     try {
 
       await fetch(
-        "http://localhost:5000/api/tours",
+        "https://student-note-making-app-1.onrender.com/api/tours",
         {
           method: "POST",
 
@@ -170,7 +170,7 @@ const deleteTour = async (id) => {
   try {
 
     await fetch(
-      `http://localhost:5000/api/tours/${id}`,
+      `https://student-note-making-app-1.onrender.com/api/tours/${id}`,
       {
         method: "DELETE",
 

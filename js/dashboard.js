@@ -196,7 +196,7 @@ const fetchDashboardData = async () => {
 
     // NOTES
     const notesResponse = await fetch(
-      "http://localhost:5000/api/notes",
+      "https://student-note-making-app-1.onrender.com/api/notes",
       {
         headers: {
           Authorization: `Bearer ${token}`
@@ -251,7 +251,7 @@ if (user.plan === "free") {
     // ASSIGNMENTS
     const assignmentResponse =
       await fetch(
-        "http://localhost:5000/api/assignments",
+        "https://student-note-making-app-1.onrender.com/api/assignments",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -270,7 +270,7 @@ if (user.plan === "free") {
     // EXAMS
     const examResponse =
       await fetch(
-        "http://localhost:5000/api/exams",
+        "https://student-note-making-app-1.onrender.com/api/exams",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -289,7 +289,7 @@ if (user.plan === "free") {
     // TOURS
     const tourResponse =
       await fetch(
-        "http://localhost:5000/api/tours",
+        "https://student-note-making-app-1.onrender.com/api/tours",
         {
           headers: {
             Authorization: `Bearer ${token}`

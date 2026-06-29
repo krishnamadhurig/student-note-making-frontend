@@ -14,7 +14,7 @@ buyBtn.addEventListener("click", async () => {
 
     // CREATE ORDER
     const response = await fetch(
-      "http://localhost:5000/api/premium/create-order",
+      "hhttps://student-note-making-app-1.onrender.com/api/premium/create-order",
       {
         method: "POST",
         headers: {
@@ -45,7 +45,7 @@ buyBtn.addEventListener("click", async () => {
   const token = localStorage.getItem("token");
 
   const activateRes = await fetch(
-    "http://localhost:5000/api/premium/activate",
+    "https://student-note-making-app-1.onrender.com/api/premium/activate",
     {
       method: "POST",
       headers: {
